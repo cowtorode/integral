@@ -26,7 +26,7 @@ intresult integrate(double t0, double t, double dt)
 
 	intresult y;
 	y.area = area;
-	y.iterations = itrs;
+	y.iterations = itrs + 1; // add one because we go from 0 until i == itrs, so it's itrs + 1
 
 	return y;
 }
